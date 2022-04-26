@@ -1,0 +1,10 @@
+﻿version: '2'
+
+services:
+
+    app_mvc:
+        image: app/mvc
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Production
+        ports:
+            - "8080:80"
