@@ -20,3 +20,19 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "WebApplicationSchoolGoogleAppService.dll"]
+
+
+# FROM mcr.microsoft.com/dotnet/aspnet:5.0-alpine
+
+# WORKDIR /app
+# COPY . .
+
+# ENTRYPOINT ["dotnet", "WebApplicationSchoolGoogleAppService.dll"]
+
+
+
+# FROM mcr.microsoft.com/dotnet/aspnet:5.0-alpine
+# ADD ./ /app
+# #ENV ASPNETCORE_URLS=https://*:${PORT}
+# WORKDIR /app
+# ENTRYPOINT [ "dotnet", "WebApplicationSchoolGoogleAppService.dll" ]
